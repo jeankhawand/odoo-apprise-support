@@ -68,3 +68,4 @@ Parts of the module are inspired by:
 * `List Range Selection <https://github.com/OCA/web>`_
 * `Openworx Backend Theme <https://github.com/Openworx/backend_theme>`_
 * `Muk web <https://github.com/muk-it/muk_web>`_
+* Special thanks to Chris for `Apprise <https://github.com/caronc/apprise>`_
