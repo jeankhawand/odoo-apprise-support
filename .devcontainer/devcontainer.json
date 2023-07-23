@@ -1,0 +1,21 @@
+{
+  "name": "OdooRise",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/mnt/extra-addons/apprise",
+  "remoteUser": "odoo",
+  "forwardPorts": [
+    8069,
+    8071,
+    8072
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker",
+        "rangav.vscode-thunder-client",
+        "ms-python.python"
+      ]
+    }
+  }
+}

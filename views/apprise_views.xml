@@ -1,0 +1,27 @@
+<odoo>
+    <data>
+        <!-- Extend Action Menu in Contacts/Partners -->
+        <record id="view_res_partner_form_inherited" model="ir.ui.view">
+            <field name="name">res.partner.form.inherited</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page string="Notifications">
+                    <separator string="Send Notification"/>
+                            <label for="apprise_services_urls" string="Services URLs Seperated by comma" class="col-lg-3 o_light_label" /> 
+                                <field name="apprise_services_urls"/>
+                                <br />
+                                <label for="subject" string="Subject" class="col-lg-3 o_light_label" />
+                                <field name="subject"/>
+                                <br />
+                                <label for="message" string="Message" class="col-lg-3 o_light_label" />
+                                <field name="message"/>
+                                <br />
+                                <button name="action_notify" string="Notify" type="object" class="btn-secondary"/>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
