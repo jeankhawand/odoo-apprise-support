@@ -32,6 +32,7 @@ Usage
 =============
 
 After the module is installed, the design is adjusted accordingly.
+
 * Currently it's working with Contacts/Partners within a notebook page
 * Each Contact profile will need to set apprise services urls sepearated by comma. For further information about the services urls, please refer to `apprise wiki <https://github.com/caronc/apprise/wiki>`
 * Once the services urls , subject and message are set. The admin/agent will be able to send notifications to the selected services by clicking on the "Notify" button
@@ -39,6 +40,7 @@ After the module is installed, the design is adjusted accordingly.
 
 Future Plans
 =======
+
 * clear the notification fields after sending the notification
 * add a notification history page
 * inherit report module to send reports as attachement to coresponding notification services
