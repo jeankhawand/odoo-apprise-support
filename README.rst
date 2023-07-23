@@ -34,7 +34,7 @@ Usage
 After the module is installed, the design is adjusted accordingly.
 
 * Currently it's working with Contacts/Partners within a notebook page
-* Each Contact profile will need to set apprise services urls sepearated by comma. For further information about the services urls, please refer to `apprise wiki <https://github.com/caronc/apprise/wiki>`
+* Each Contact profile will need to set apprise services urls sepearated by comma. For further information about the services urls, please refer to `apprise wiki <https://github.com/caronc/apprise/wiki>`_
 * Once the services urls , subject and message are set. The admin/agent will be able to send notifications to the selected services by clicking on the "Notify" button
 
 
@@ -52,7 +52,7 @@ Credits
 Author & Contributors
 ------------
 
-* Jean Khawand <jk@jeankhawand.com> (Author)
+* `Jean Khawand <jk@jeankhawand.com>`_ (Author)
 
 Images
 ------------
