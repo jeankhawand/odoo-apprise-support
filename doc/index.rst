@@ -8,6 +8,7 @@ Installation
 ============
 
 To install this module, you need to:
+
 1. Install via pip `pip install apprise`
 2. Download the module and add it to your Odoo addons folder. Afterward, log on to
 your Odoo server and go to the Apps menu. Trigger the debug mode and update the
@@ -32,6 +33,7 @@ Usage
 =============
 
 After the module is installed, the design is adjusted accordingly.
+
 * Currently it's working with Contacts/Partners within a notebook page
 * Each Contact profile will need to set apprise services urls sepearated by comma. For further information about the services urls, please refer to `apprise wiki <https://github.com/caronc/apprise/wiki>`
 * Once the services urls , subject and message are set. The admin/agent will be able to send notifications to the selected services by clicking on the "Notify" button
@@ -39,6 +41,7 @@ After the module is installed, the design is adjusted accordingly.
 
 Future Plans
 =======
+
 * clear the notification fields after sending the notification
 * add a notification history page
 * inherit report module to send reports as attachement to coresponding notification services
@@ -67,4 +70,4 @@ Parts of the module are inspired by:
 * `Web Responsive <https://github.com/OCA/web>`_
 * `List Range Selection <https://github.com/OCA/web>`_
 * `Openworx Backend Theme <https://github.com/Openworx/backend_theme>`_
-* `Muk web <https://github.com/muk-it/muk_web>`_
+* Special thanks to Chris for `Apprise <https://github.com/caronc/apprise>`_

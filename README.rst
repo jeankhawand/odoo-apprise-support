@@ -8,6 +8,7 @@ Installation
 ============
 
 To install this module, you need to:
+
 1. Install via pip `pip install apprise`
 2. Download the module and add it to your Odoo addons folder. Afterward, log on to
 your Odoo server and go to the Apps menu. Trigger the debug mode and update the

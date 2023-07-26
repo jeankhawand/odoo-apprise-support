@@ -14,14 +14,13 @@ class ResPartner(models.Model):
         subject = self.subject
         message = self.message
         if services_urls and subject and message:
-            logger.error("[Apprise-Adapter]: preparing to send notification")
+            logger.info("[Apprise-Adapter]: preparing to send notification")
             if len(services_urls) > 10:
                 # define apprise object
                 apobj = apprise.Apprise()
                 for url in services_urls.split(','):
                     apobj.add(url)
-                    logger.error(url)
-                logger.error("Apprise-Adapter]: done adding urls to Apprise")
+                logger.info("[Apprise-Adapter]: done adding urls to Apprise")
                 if apobj.notify(body=message,title=subject):
                     notification = {
                         'type': 'ir.actions.client',
@@ -35,10 +34,9 @@ class ResPartner(models.Model):
                     } 
                     return notification
                 else:
-                    raise UserError("Apprise: unable to send notification check logs")  
+                    raise UserError("[Apprise]: unable to send notification check logs")  
 
             else:
-                raise UserError("Please check services urls")
-            return True
+                raise UserError("[Apprise-Adapter]: Please check services urls")
         else:
-            raise UserError("Services URLS, Message and Subject shouldn't be empty")
+            raise UserError("[Apprise-Adapter]: Services URLS, Message and Subject shouldn't be empty")
